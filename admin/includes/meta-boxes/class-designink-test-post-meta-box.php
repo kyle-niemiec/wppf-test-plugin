@@ -70,7 +70,7 @@ if ( ! class_exists( 'DesignInk_Test_Post_Meta_Box', false ) ) {
 		 * 
 		 * @return int The post ID.
 		 */
-		final protected static function save_post( int $post_id, \WP_Post $Post = null ) {
+		final protected static function save_post( int $post_id, ?\WP_Post $Post = null ) {
 			$is_custom_post = $Post->post_type === DesignInk_Test_Post_Type::post_type();
 
 			if ( ! $is_custom_post ) {
@@ -98,7 +98,7 @@ if ( ! class_exists( 'DesignInk_Test_Post_Meta_Box', false ) ) {
 		 * 
 		 * @return array The data to save to the meta.
 		 */
-		final private static function prepare_data( array $times_saved ) {
+		private static function prepare_data( array $times_saved ) {
 			$data = self::get_post_data();
 			$data['times_saved'] = $times_saved;
 
