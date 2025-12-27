@@ -1,25 +1,33 @@
 'use strict';
 
 // Gulp-specific requires
-const gulp = require( 'gulp' );
-const util = require( 'gulp-util' );
-const prompt = require( 'gulp-prompt' );
-const jeditor = require( 'gulp-json-editor' );
-const replace = require( 'gulp-replace' );
+import gulp from 'gulp';
+import { Chalk } from 'chalk';
+import prompt from 'gulp-prompt';
+import jeditor from 'gulp-json-editor';
+import replace from 'gulp-replace';
+
+const chalk = new Chalk( { level: 3 } );
 
 // NPM requires
-const sprintf = require( 'sprintf-js' ).sprintf;
-const compareVersions = require( 'compare-versions' );
+import { sprintf } from 'sprintf-js';
+import compareVersions from 'compare-versions';
 
 // Process requires
-const fs = require( 'fs' );
+import fs from 'node:fs';
 
-function upgrade_version( cb ) {
+
+/**
+ * Find and replace 
+ *
+ * @param {function} cb The Gulp callback to return to other tasks in the pipeline.
+ */
+export function upgrade_version( cb ) {
 	const packageJSON = fs.readFileSync( 'package.json' );
 	const packageInfo = JSON.parse( packageJSON );
 	const version = packageInfo.version;
 
-	util.log( util.colors.yellow( sprintf( 'Current package version: %s', version ) ) );
+	console.log( chalk.yellow( sprintf( 'Current package version: %s', version ) ) );
 
 	// Start with version prompt
 	gulp.src( 'gulpfile.js' )
@@ -27,7 +35,7 @@ function upgrade_version( cb ) {
 			{
 				type: 'input',
 				name: 'version',
-				message: util.colors.cyan( 'Enter the version to bump to (e.g. "1.0.0"):' )
+				message: chalk.cyan( 'Enter the version to bump to (e.g. "1.0.0"):' )
 			},
 			function( res ) {
 				// Limit subversions to 3 numbers with 3 digits each
@@ -46,7 +54,7 @@ function upgrade_version( cb ) {
 
 					// Check if version is newer
 					if ( newerVersion ) {
-						util.log( util.colors.green( res.version ) );
+						console.log( chalk.green( res.version ) );
 
 						/**
 						 * Find/replace all version instances
@@ -80,18 +88,16 @@ function upgrade_version( cb ) {
 
 					} else {
 						const message = 'Provided version is not newer than the old version.';
-						util.log( util.colors.red( message ) );
+						console.log( chalk.red( message ) );
 						cb( new RangeError( message ) );
 					}
 
 				} else {
 					const message = 'Provided version is not in the correct format.';
-					util.log( util.colors.red( message ) );
+					console.log( chalk.red( message ) );
 					cb( new TypeError( message ) );
 				}
 
 			}
 		) );
 }
-
-exports.upgrade_version = upgrade_version;

@@ -18,24 +18,24 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler;
+namespace DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Module;
+use DesignInk\WordPress\Framework\v1_1_2\Module;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler_Viewer_Module', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler_Viewer_Module', false ) ) {
 
 	/**
 	 * Manage the settings for for this plugin.
 	 */
 	final class Action_Scheduler_Viewer_Module extends Module {
 
-		/** @var \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Management_Settings_Page $Page The Page instance. */
+		/** @var \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Management_Settings_Page $Page The Page instance. */
 		public static $Page;
 
 		/**

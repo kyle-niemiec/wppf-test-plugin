@@ -1,32 +1,41 @@
-[
-    {
-        "name": "designink/designink-wp-framework",
-        "version": "1.1.1",
-        "version_normalized": "1.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/designink-digital/designink-wp-framework.git",
-            "reference": "87940520af594be77e51f617d873c5aef846454e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/designink-digital/designink-wp-framework/zipball/87940520af594be77e51f617d873c5aef846454e",
-            "reference": "87940520af594be77e51f617d873c5aef846454e",
-            "shasum": ""
-        },
-        "time": "2021-04-14T04:35:38+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-3.0"
-        ],
-        "authors": [
-            {
-                "name": "Kyle Niemiec",
-                "email": "kyle@designinkdigital.com"
-            }
-        ],
-        "description": "DesignInk Digital's internal framework for facilitating WordPress development."
-    }
-]
+{
+    "packages": [
+        {
+            "name": "designink/designink-wp-framework",
+            "version": "1.1.2",
+            "version_normalized": "1.1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/designink-digital/designink-wp-framework.git",
+                "reference": "b7365bb838a2297c7d280e8b0c59b57f04425903"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/designink-digital/designink-wp-framework/zipball/b7365bb838a2297c7d280e8b0c59b57f04425903",
+                "reference": "b7365bb838a2297c7d280e8b0c59b57f04425903",
+                "shasum": ""
+            },
+            "time": "2025-12-27T19:23:30+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Niemiec",
+                    "email": "kyle@designinkdigital.com"
+                }
+            ],
+            "description": "DesignInk Digital's internal framework for facilitating WordPress development.",
+            "support": {
+                "issues": "https://github.com/designink-digital/designink-wp-framework/issues",
+                "source": "https://github.com/designink-digital/designink-wp-framework/tree/v1.1.2"
+            },
+            "install-path": "../designink/designink-wp-framework"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

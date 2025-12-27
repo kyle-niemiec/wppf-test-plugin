@@ -18,19 +18,19 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Admin;
+namespace DesignInk\WordPress\Framework\v1_1_2\Admin;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Admin\Admin_Notices;
-use DesignInk\WordPress\Framework\v1_1_1\DesignInk_Framework_Shadow_Plugin;
-use DesignInk\WordPress\Framework\v1_1_1\Module;
+use DesignInk\WordPress\Framework\v1_1_2\Admin\Admin_Notices;
+use DesignInk\WordPress\Framework\v1_1_2\DesignInk_Framework_Shadow_Plugin;
+use DesignInk\WordPress\Framework\v1_1_2\Module;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Admin_Notice_Module', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Admin\Admin_Notice_Module', false ) ) {
 
 	/**
 	 * This module holds the logic for saving our admin notices as transients and displaying them on an admin page load.

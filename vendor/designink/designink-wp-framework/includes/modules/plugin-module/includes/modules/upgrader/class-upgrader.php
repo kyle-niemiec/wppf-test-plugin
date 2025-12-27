@@ -18,17 +18,17 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Plugin;
+namespace DesignInk\WordPress\Framework\v1_1_2\Plugin;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Module;
+use DesignInk\WordPress\Framework\v1_1_2\Module;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Plugin\Upgrader', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Plugin\Upgrader', false ) ) {
 
 	/**
 	 * A Module for providing automated access to running tasks on Plugin version updates.

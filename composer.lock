@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "designink/designink-wp-framework",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/designink-digital/designink-wp-framework.git",
-                "reference": "87940520af594be77e51f617d873c5aef846454e"
+                "reference": "b7365bb838a2297c7d280e8b0c59b57f04425903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/designink-digital/designink-wp-framework/zipball/87940520af594be77e51f617d873c5aef846454e",
-                "reference": "87940520af594be77e51f617d873c5aef846454e",
+                "url": "https://api.github.com/repos/designink-digital/designink-wp-framework/zipball/b7365bb838a2297c7d280e8b0c59b57f04425903",
+                "reference": "b7365bb838a2297c7d280e8b0c59b57f04425903",
                 "shasum": ""
             },
             "type": "library",
@@ -32,16 +32,20 @@
                 }
             ],
             "description": "DesignInk Digital's internal framework for facilitating WordPress development.",
-            "time": "2021-04-14T04:35:38+00:00"
+            "support": {
+                "issues": "https://github.com/designink-digital/designink-wp-framework/issues",
+                "source": "https://github.com/designink-digital/designink-wp-framework/tree/v1.1.2"
+            },
+            "time": "2025-12-27T19:23:30+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }

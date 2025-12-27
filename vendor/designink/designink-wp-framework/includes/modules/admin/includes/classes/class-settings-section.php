@@ -18,28 +18,28 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Admin\Pages;
+namespace DesignInk\WordPress\Framework\v1_1_2\Admin\Pages;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Utility;
-use DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Field;
+use DesignInk\WordPress\Framework\v1_1_2\Utility;
+use DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Field;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Section', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Section', false ) ) {
 
 	/**
 	 * A class to automate the process of creating a page under the 'settings' menu item.
 	 */
 	final class Settings_Section {
 
-		/** @var \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages Settings Page parent instance */
+		/** @var \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages Settings Page parent instance */
 		protected $Settings_Page;
 
-		/** @var \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Field[] Fields registered to this Section. */
+		/** @var \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Field[] Fields registered to this Section. */
 		protected $Settings_Fields;
 
 		/** @var string The section identifier for the settings section. */
@@ -57,14 +57,14 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings
 		/**
 		 * Return the Settings Page instance.
 		 * 
-		 * @return \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages $Settings_Page The Settings Page instance.
+		 * @return \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages $Settings_Page The Settings Page instance.
 		 */
 		final public function get_settings_page() { return $this->Settings_Page; }
 
 		/**
 		 * Return the Settings Field instances.
 		 * 
-		 * @return \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Field[] $Settings_Fields The Settings Fields in this Section instance.
+		 * @return \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Field[] $Settings_Fields The Settings Fields in this Section instance.
 		 */
 		final public function get_settings_fields() { return $this->Settings_Fields; }
 
@@ -78,7 +78,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings
 		/**
 		 * Set the initial values for the Settings Section.
 		 * 
-		 * @param \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages $Settings_Page The parent Settings Page that these settings belong to.
+		 * @param \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages $Settings_Page The parent Settings Page that these settings belong to.
 		 * @param string $section_name The section identifier.
 		 * @param array $args The optional arguments to pass to the Section.
 		 */
@@ -104,7 +104,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings
 		/**
 		 * Register the section settings and add the section to the page.
 		 */
-		final private function register() {
+		private function register() {
 			// N.B. This is where the option name is registered in the database.
 			register_setting( $this->Settings_Page->page_option_group(), $this->get_section_option_name() );
 
@@ -119,7 +119,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings
 		/**
 		 * Load option data from the database and set the values of the inputs.
 		 */
-		final private function load_input_options() {
+		private function load_input_options() {
 			$options = $this->load_option();
 
 			foreach ( $this->inputs as $input ) {

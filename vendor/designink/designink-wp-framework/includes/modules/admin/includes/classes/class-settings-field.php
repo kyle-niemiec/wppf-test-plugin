@@ -18,25 +18,25 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Admin\Pages;
+namespace DesignInk\WordPress\Framework\v1_1_2\Admin\Pages;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Section;
-use DesignInk\WordPress\Framework\v1_1_1\Utility;
+use DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Section;
+use DesignInk\WordPress\Framework\v1_1_2\Utility;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Field', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Field', false ) ) {
 
 	/**
 	 * A class to automate the process of creating a Settings Field under a Settings Section.
 	 */
 	final class Settings_Field {
 
-		/** @var \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Section The parent Settings Section. */
+		/** @var \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Section The parent Settings Section. */
 		protected $Settings_Section;
 
 		/** @var string The identifier key to use when the Settings Field has multiple values. */
@@ -62,7 +62,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings
 		/**
 		 * Construct the Settings Field.
 		 * 
-		 * @param \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings_Section $Settings_Section The parent Settings Section.
+		 * @param \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\Settings_Section $Settings_Section The parent Settings Section.
 		 * @param array $args The settings passed to this Settings Field.
 		 */
 		public function __construct( Settings_Section $Settings_Section, array $args ) {
@@ -87,7 +87,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\Settings
 		/**
 		 * Register this Settings Field and get the correct
 		 */
-		final private function register() {
+		private function register() {
 			add_settings_field(
 				$this->get_field_name(),
 				__( $this->label ),

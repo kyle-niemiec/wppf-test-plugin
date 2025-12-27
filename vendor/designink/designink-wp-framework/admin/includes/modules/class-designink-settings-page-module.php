@@ -18,24 +18,24 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Admin\Pages;
+namespace DesignInk\WordPress\Framework\v1_1_2\Admin\Pages;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Module;
+use DesignInk\WordPress\Framework\v1_1_2\Module;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\DesignInk_Settings_Page_Module', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Admin\Pages\DesignInk_Settings_Page_Module', false ) ) {
 
 	/**
 	 * Manage the settings for for this plugin.
 	 */
 	final class DesignInk_Settings_Page_Module extends Module {
 
-		/** @var \DesignInk\WordPress\Framework\v1_1_1\Admin\Pages $Settings_Page The Settings Page instance. */
+		/** @var \DesignInk\WordPress\Framework\v1_1_2\Admin\Pages $Settings_Page The Settings Page instance. */
 		public static $Settings_Page;
 
 		/**
@@ -67,7 +67,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\DesignIn
 		 * 
 		 * @return bool Whether or not sections for the settings page were found.
 		 */
-		final private static function settings_sections_registered() {
+		private static function settings_sections_registered() {
 			global $wp_settings_sections;
 
 			if ( is_array( $wp_settings_sections ) && array_key_exists( DesignInk_Settings_Page::page_option_group(), $wp_settings_sections ) ) {
@@ -81,7 +81,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Pages\DesignIn
 		/**
 		 * Find the menu instance and unset it if it exists.
 		 */
-		final private static function unset_menu() {
+		private static function unset_menu() {
 			global $submenu;
 			$root = 'options-general.php';
 			$page = DesignInk_Settings_Page::page_option_group();

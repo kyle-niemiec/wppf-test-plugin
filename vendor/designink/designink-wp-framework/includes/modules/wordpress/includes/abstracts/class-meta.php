@@ -18,17 +18,17 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1;
+namespace DesignInk\WordPress\Framework\v1_1_2;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Utility;
+use DesignInk\WordPress\Framework\v1_1_2\Utility;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Meta', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Meta', false ) ) {
 
 	/**
 	 * An abstract class for other abstract classes to inherit regarding saving meta values in standard form in the WordPress database.
@@ -36,7 +36,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Meta', false ) ) {
 	 */
 	abstract class Meta {
 
-		/** @var \DesignInk\WordPress\Framework\v1_1_1\Meta_Schema The Schema for the Meta. */
+		/** @var \DesignInk\WordPress\Framework\v1_1_2\Meta_Schema The Schema for the Meta. */
 		protected $Schema;
 
 		/** @var string Whether the meta data is being updated as a single key or with multiple keys. */
@@ -76,7 +76,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Meta', false ) ) {
 		/**
 		 * Return the Meta schema.
 		 * 
-		 * @return \DesignInk\WordPress\Framework\v1_1_1\Meta_Schema The Meta schema.
+		 * @return \DesignInk\WordPress\Framework\v1_1_2\Meta_Schema The Meta schema.
 		 */
 		final public function get_schema() { return $this->Schema; }
 
@@ -116,7 +116,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Meta', false ) ) {
 		/**
 		 * Set the schema for the Meta data.
 		 * 
-		 * @param \DesignInk\WordPress\Framework\v1_1_1\Meta_Schema $Schema The Meta Value to use for the schema.
+		 * @param \DesignInk\WordPress\Framework\v1_1_2\Meta_Schema $Schema The Meta Value to use for the schema.
 		 */
 		final protected function set_schema( Meta_Schema $Schema ) {
 			$this->Schema = $Schema;

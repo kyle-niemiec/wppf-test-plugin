@@ -18,17 +18,17 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Admin;
+namespace DesignInk\WordPress\Framework\v1_1_2\Admin;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Singleton;
+use DesignInk\WordPress\Framework\v1_1_2\Singleton;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Meta_Box', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Admin\Meta_Box', false ) ) {
 
 	/**
 	 * A manager for Meta Boxes that appear on admin edit pages. Manages the form rendering and post save hooking processes.
@@ -61,7 +61,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Meta_Box', fal
 		 * @param int $post_id The ID of the Post being saved.
 		 * @param \WP_Post $Post A copy of the Post instance being saved.
 		 */
-		abstract protected static function save_post( int $post_id, \WP_Post $Post = null );
+		abstract protected static function save_post( int $post_id, ?\WP_Post $Post = null );
 
 		/**
 		 * A meta key to use when saving the Post Meta to the database. Should be lowercase and underscored.
@@ -127,7 +127,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Admin\Meta_Box', fal
 		 * @param int $post_id The ID of the Post being saved.
 		 * @param \WP_Post $Post A copy of the Post instance being saved.
 		 */
-		final public static function _save_post( int $post_id, \WP_Post $Post = null ) {
+		final public static function _save_post( int $post_id, ?\WP_Post $Post = null ) {
 
 			if ( ! isset( $_POST[ static::get_nonce() ] ) || ! wp_verify_nonce( $_POST[ static::get_nonce() ], self::get_nonce_action() ) ) {
 				return;

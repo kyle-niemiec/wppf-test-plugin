@@ -18,20 +18,20 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1;
+namespace DesignInk\WordPress\Framework\v1_1_2;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Admin\Admin_Notice;
-use DesignInk\WordPress\Framework\v1_1_1\Admin\Admin_Notice_Queue;
-use DesignInk\WordPress\Framework\v1_1_1\Plugin;
-use DesignInk\WordPress\Framework\v1_1_1\WooCommerce\Email_Traits;
+use DesignInk\WordPress\Framework\v1_1_2\Admin\Admin_Notice;
+use DesignInk\WordPress\Framework\v1_1_2\Admin\Admin_Notice_Queue;
+use DesignInk\WordPress\Framework\v1_1_2\Plugin;
+use DesignInk\WordPress\Framework\v1_1_2\WooCommerce\Email_Traits;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\WooCommerce_Plugin', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\WooCommerce_Plugin', false ) ) {
 
 	/**
 	 * A super class of the Plugin that includes WooCommerce-specific functionality.

@@ -18,17 +18,17 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1;
+namespace DesignInk\WordPress\Framework\v1_1_2;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Framework;
+use DesignInk\WordPress\Framework\v1_1_2\Framework;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Utility', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Utility', false ) ) {
 
 	/**
 	 * Utility functions class to hold useful chunks of code we find ourselves often reusing.

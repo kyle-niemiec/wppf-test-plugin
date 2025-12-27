@@ -3,27 +3,27 @@
  * Plugin Name: DesignInk WP Framework Test Plugin
  * Plugin URI: https://designinkdigital.com/
  * Description: A demo plugin for the DesignInk WP Framework.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: DesignInk Digital
  * Author URI: https://designinkdigital.com/
  * Text Domain: wporg
  * Domain Path: /languages
  * 
- * Copyright: (c) 2008-2022, DesignInk, LLC (answers@designinkdigital.com)
+ * Copyright: (c) 2008-2026, DesignInk, LLC (answers@designinkdigital.com)
  * 
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * 
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2022, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  * 
  */
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Staging_Detection\Staging_Detection_Notice;
-use DesignInk\WordPress\Framework\v1_1_1\WooCommerce_Plugin;
+use DesignInk\WordPress\Framework\v1_1_2\Staging_Detection\Staging_Detection_Notice;
+use DesignInk\WordPress\Framework\v1_1_2\WooCommerce_Plugin;
 
 // Include DesignInk's framework
 require_once __DIR__ . '/vendor/designink/designink-wp-framework/index.php';

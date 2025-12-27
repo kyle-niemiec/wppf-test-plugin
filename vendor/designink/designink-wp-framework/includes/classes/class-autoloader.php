@@ -18,17 +18,17 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1;
+namespace DesignInk\WordPress\Framework\v1_1_2;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Utility;
+use DesignInk\WordPress\Framework\v1_1_2\Utility;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Autoloader', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Autoloader', false ) ) {
 
 	// Require Singleton abstract first thing since the Autoloader extends it and it won't be autoloaded!
 	require_once ( __DIR__ . '/../abstracts/class-singleton.php' );
@@ -49,7 +49,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Autoloader', false )
 		final protected function __construct() {
 
 			// Check if Utility is loaded sincle this class requires it, but it also does the autoloading \o/.
-			if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Utility', false ) ) {
+			if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Utility', false ) ) {
 				$utility_path = __DIR__ . '/../statics/class-utility.php';
 				require_once ( $utility_path );
 			}

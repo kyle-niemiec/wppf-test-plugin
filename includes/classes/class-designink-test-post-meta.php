@@ -17,14 +17,14 @@
  * needs please refer to https://designinkdigital.com
  *
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2022, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Meta_Schema;
-use DesignInk\WordPress\Framework\v1_1_1\Post_Meta;
+use DesignInk\WordPress\Framework\v1_1_2\Meta_Schema;
+use DesignInk\WordPress\Framework\v1_1_2\Post_Meta;
 
 if ( ! class_exists( 'DesignInk_Test_Post_Meta', false ) ) {
 

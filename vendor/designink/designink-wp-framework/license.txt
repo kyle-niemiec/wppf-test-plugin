@@ -1,6 +1,6 @@
 DesignInk WordPress Framework
 
-Copyright 2008-2021, DesignInk, LLC
+Copyright 2008-2026, DesignInk, LLC
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

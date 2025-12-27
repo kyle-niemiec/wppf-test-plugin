@@ -4,7 +4,7 @@
 	"homepage": "https://designinkdigital.com/",
 	"license": "GPL-3.0",
 	"name": "packagist-testing",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/designink-digital/designink-wp-framework"
@@ -13,12 +13,12 @@
 		"url": "https://github.com/designink-digital/designink-wp-framework/issues"
 	},
 	"devDependencies": {
+		"chalk": "^5.6.2",
 		"compare-versions": "^3.5.1",
-		"gulp": "^4.0.2",
+		"gulp": "^5.0.1",
 		"gulp-json-editor": "^2.5.4",
 		"gulp-prompt": "^1.2.0",
 		"gulp-replace": "^1.0.0",
-		"gulp-util": "^3.0.8",
 		"sprintf-js": "^1.1.2"
 	}
 }

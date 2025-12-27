@@ -18,17 +18,17 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Plugin;
+namespace DesignInk\WordPress\Framework\v1_1_2\Plugin;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Post_Meta;
+use DesignInk\WordPress\Framework\v1_1_2\Post_Meta;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Plugin\Post', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Plugin\Post', false ) ) {
 
 	/**
 	 * A class to represent and help deal with common custom post type functionality.
@@ -72,7 +72,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Plugin\Post', false 
 		 * 
 		 * @param string $meta_key The meta key of the Meta to return.
 		 *
-		 * @return null|\DesignInk\WordPress\Framework\v1_1_1\Post_Meta The Post meta if found or NULL.
+		 * @return null|\DesignInk\WordPress\Framework\v1_1_2\Post_Meta The Post meta if found or NULL.
 		 */
 		final public function get_meta( string $meta_key = '' ) {
 
@@ -131,7 +131,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Plugin\Post', false 
 		/**
 		 * Add a Post Meta to this Post.
 		 * 
-		 * @param \DesignInk\WordPress\Framework\v1_1_1\Post_Meta
+		 * @param \DesignInk\WordPress\Framework\v1_1_2\Post_Meta
 		 */
 		final protected function add_meta( Post_Meta $Meta ) {
 			if ( ! array_key_exists( $Meta->key(), $this->Meta ) ) {

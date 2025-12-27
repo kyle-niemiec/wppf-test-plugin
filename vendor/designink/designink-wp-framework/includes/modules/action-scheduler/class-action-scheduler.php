@@ -18,21 +18,21 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1;
+namespace DesignInk\WordPress\Framework\v1_1_2;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Cron_Manager;
-use DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Form_Builder;
-use DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Interval_Timer;
-use DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Simple_Timer;
-use DesignInk\WordPress\Framework\v1_1_1\Module;
+use DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Cron_Manager;
+use DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Form_Builder;
+use DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Interval_Timer;
+use DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Simple_Timer;
+use DesignInk\WordPress\Framework\v1_1_2\Module;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler', false ) ) {
 
 	/**
 	 * A class to manage the DesignInk custom Action Scheduler solution for WordPress.
@@ -54,7 +54,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler', f
 		/**
 		 * Register the different types of timers with the Form Builder so it can print their forms.
 		 */
-		final private static function register_timer_forms() {
+		private static function register_timer_forms() {
 			Form_Builder::add_timer_class( Simple_Timer::class );
 			Form_Builder::add_timer_class( Interval_Timer::class );
 		}

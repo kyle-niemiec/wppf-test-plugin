@@ -18,18 +18,18 @@
  *
  * @package   DesignInk/WordPress/Framework
  * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2021, DesignInk, LLC
+ * @copyright Copyright (c) 2008-2026, DesignInk, LLC
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
-namespace DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler;
+namespace DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Action;
-use DesignInk\WordPress\Framework\v1_1_1\Utility;
+use DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Action;
+use DesignInk\WordPress\Framework\v1_1_2\Utility;
 
-if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Timer', false ) ) {
+if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Timer', false ) ) {
 
 	/**
 	 * A Timer template for the Action Scheduler system that other timer classes can extend and implement their own settings for.
@@ -130,7 +130,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		/**
 		 * Get the Actions.
 		 * 
-		 * @return \DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Action[] The Actions.
+		 * @return \DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Action[] The Actions.
 		 */
 		final public function get_actions() { return $this->Actions; }
 
@@ -172,7 +172,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		/**
 		 * Loop through the initial array of actions and load their instances.
 		 */
-		final private function create_action_instances() {
+		private function create_action_instances() {
 			foreach ( $this->actions_data as $action_id => $action ) {
 				$Action = new Action( $action_id, $action );
 				$this->Actions[] = $Action;
@@ -194,7 +194,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		/**
 		 * Run each action individually, set the last run time, and save the Timer.
 		 */
-		final private function run() {
+		private function run() {
 			do_action( sprintf( 'designink_action_scheduler_before_timer_run_%s', $this->id ), $this->id );
 
 			foreach ( $this->Actions as $Action ) {
@@ -209,7 +209,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		/**
 		 * Add an Action to the Timer instance, optionally update the Action and { $this->action_data } if it already exists.
 		 * 
-		 * @param \DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Action $Action The Action to try and add.
+		 * @param \DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Action $Action The Action to try and add.
 		 * @param bool $update Whether or not to replace the Action if it already exists by ID (default FALSE)
 		 * 
 		 * @return bool Whether or not the action was added.
@@ -229,7 +229,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		 * 
 		 * @param string $action_id The ID of the Action to look for.
 		 * 
-		 * @return null|\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Action The Action instance or NULL.
+		 * @return null|\DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Action The Action instance or NULL.
 		 */
 		final public function get_action( string $action_id ) {
 			if ( $this->Actions[ $action_id ] ) {
@@ -251,7 +251,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		}
 
 		/**
-		 * A wrapper function for \DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Timer_Manager::update_timer().
+		 * A wrapper function for \DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Timer_Manager::update_timer().
 		 * 
 		 * @param bool $merge Whether or not to merge existing Actions if the Timer already exists.
 		 * 
@@ -274,7 +274,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		/**
 		 * Merge Actions from another Timer instance into this instance.
 		 * 
-		 * @param \DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Timer $Timer The Timer instance to merge Actions from.
+		 * @param \DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Timer $Timer The Timer instance to merge Actions from.
 		 */
 		final public function merge_actions( Timer $Timer ) {
 			foreach ( $Timer->get_actions() as $Action ) {
@@ -309,7 +309,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		 * 
 		 * @param string $timer_id The ID of the Timer.
 		 * 
-		 * @return null|\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Timer The timer that was instantiated or FALSE.
+		 * @return null|\DesignInk\WordPress\Framework\v1_1_2\Action_Scheduler\Timer The timer that was instantiated or FALSE.
 		 */
 		final public static function instantiate_timer( string $timer_id, array $timer_options ) {
 
@@ -335,7 +335,7 @@ if ( ! class_exists( '\DesignInk\WordPress\Framework\v1_1_1\Action_Scheduler\Tim
 		 * 
 		 * @return string The classs name of the Timer type, or an empty string if not found.
 		 */
-		final private static function timer_class_from_type( string $type ) {
+		private static function timer_class_from_type( string $type ) {
 			switch( $type ) {
 				case 'interval-timer':
 					return Interval_Timer::class;
