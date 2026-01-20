@@ -4,8 +4,22 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8324186522f93511c6a4bffd49b71bd7
+class ComposerStaticInit8f76cbe0e4a4d55311604bb9138c49bd
 {
+    public static $prefixLengthsPsr4 = array (
+        'W' =>
+        array (
+            'WPPF\\' => 5,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'WPPF\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/kyle-niemiec/wp-plugin-framework',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -13,7 +27,9 @@ class ComposerStaticInit8324186522f93511c6a4bffd49b71bd7
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit8324186522f93511c6a4bffd49b71bd7::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8f76cbe0e4a4d55311604bb9138c49bd::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8f76cbe0e4a4d55311604bb9138c49bd::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8f76cbe0e4a4d55311604bb9138c49bd::$classMap;
 
         }, null, ClassLoader::class);
     }

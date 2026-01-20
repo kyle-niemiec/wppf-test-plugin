@@ -1,0 +1,6 @@
+# All vendor files
+vendor/
+
+# Doctum
+/docs
+/.doctum-cache

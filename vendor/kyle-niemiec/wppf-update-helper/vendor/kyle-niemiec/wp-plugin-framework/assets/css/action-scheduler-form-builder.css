@@ -1,0 +1,12 @@
+.action-scheduler-timer-builder .nav-tab-wrapper {
+	margin: 0.75rem 0;
+}
+
+.action-scheduler-timer-builder .nav-tab {
+	cursor: pointer;
+	user-select: none;
+}
+
+.action-scheduler-timer-builder .timer-forms .timer-form {
+	display: none;
+}

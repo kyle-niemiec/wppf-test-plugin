@@ -1,5 +1,6 @@
 {
     "require": {
-        "designink/designink-wp-framework": "^1.1"
+        "kyle-niemiec/wppf-update-helper": "^1.0",
+        "kyle-niemiec/wp-plugin-framework": "^1.2"
     }
 }

@@ -1,0 +1,17 @@
+.wc-memberships .woocommerce_options_panel {
+	float: left;
+	width: 80%;
+}
+
+.woocommerce_options_panel .options-group {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.woocommerce_options_panel .options-group:first-child {
+	border-top: 0;
+}
+
+.woocommerce_options_panel .options-group:last-child {
+	border-bottom: 0;
+}

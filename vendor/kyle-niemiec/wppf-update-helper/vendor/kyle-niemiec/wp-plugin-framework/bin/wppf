@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+if ( ! file_exists( __DIR__ . '/../vendor/autoload.php' ) ) {
+    $message = "The autoload file was not found. Have you run `composer install --dev` in the framework root?";
+    throw new \Exception( $message );
+}
+
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../CLI/cli.php';

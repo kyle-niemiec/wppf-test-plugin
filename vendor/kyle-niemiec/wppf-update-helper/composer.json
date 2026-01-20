@@ -1,0 +1,13 @@
+{
+	"name": "kyle-niemiec/wppf-update-helper",
+	"description": "A small, importable framework for integrating a WPPF plugin with the WordPress Plugin Update Server.",
+	"license": "GPL-3.0",
+	"version": "1.0.1",
+	"authors": [{
+		"name": "Kyle Niemiec",
+		"email": "kyle@codeflower.io"
+	}],
+	"require": {
+		"kyle-niemiec/wp-plugin-framework": "^1.2"
+	}
+}
