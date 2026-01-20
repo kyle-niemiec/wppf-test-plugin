@@ -16,17 +16,17 @@ defined( 'ABSPATH' ) or exit;
 use WPPF\v1_2_0\Framework\Utility;
 use WPPF\v1_2_0\Plugin\Upgrader_Schema;
 
-if ( ! class_exists( 'v1_0_2', false ) ) {
+if ( ! class_exists( 'v1_0_3', false ) ) {
 
 	/**
 	 * A class to control the basic functionality for an Upgrader Schema (super descriptive, ty me).
 	 */
-	final class v1_0_2 extends Upgrader_Schema {
+	final class v1_0_3 extends Upgrader_Schema {
 
 		/**
 		 * Required abstract: return version.
 		 */
-		final public function get_version() { return '1.0.2'; }
+		final public function get_version() { return '1.0.3'; }
 
 		/**
 		 * The Schema contructor.
