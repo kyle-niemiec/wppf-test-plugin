@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) or exit;
 
 use WPPF\v1_2_0\WordPress\Plugin;
 
-// Include the framework
+// Require the WordPress Plugin Framework
 require_once __DIR__ . '/vendor/kyle-niemiec/wp-plugin-framework/index.php';
 
 if ( ! class_exists( '{{plugin_class_name}}', false ) ) {

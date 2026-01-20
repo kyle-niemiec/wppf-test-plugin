@@ -7,19 +7,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyle-niemiec/wp-plugin-framework.git",
-                "reference": "9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41"
+                "reference": "f5adaac655a1b4db7d550622f7e98845533cc5c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41",
-                "reference": "9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41",
+                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/f5adaac655a1b4db7d550622f7e98845533cc5c2",
+                "reference": "f5adaac655a1b4db7d550622f7e98845533cc5c2",
                 "shasum": ""
             },
             "require-dev": {
                 "code-lts/doctum": "^5.5",
                 "symfony/console": "^6.4"
             },
-            "time": "2026-01-19T06:17:44+00:00",
+            "time": "2026-01-20T03:52:38+00:00",
             "bin": [
                 "bin/wppf"
             ],
@@ -53,18 +53,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyle-niemiec/wppf-update-helper.git",
-                "reference": "91a6e4eeb68e301b95df5417f83a795e75002ca1"
+                "reference": "ee9860c9dc0f5d77bdf79004fa5c6434741c0346"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyle-niemiec/wppf-update-helper/zipball/91a6e4eeb68e301b95df5417f83a795e75002ca1",
-                "reference": "91a6e4eeb68e301b95df5417f83a795e75002ca1",
+                "url": "https://api.github.com/repos/kyle-niemiec/wppf-update-helper/zipball/ee9860c9dc0f5d77bdf79004fa5c6434741c0346",
+                "reference": "ee9860c9dc0f5d77bdf79004fa5c6434741c0346",
                 "shasum": ""
             },
             "require": {
                 "kyle-niemiec/wp-plugin-framework": "^1.2"
             },
-            "time": "2026-01-20T05:05:20+00:00",
+            "time": "2026-01-20T08:18:02+00:00",
             "type": "library",
             "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",

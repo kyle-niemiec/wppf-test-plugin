@@ -11,13 +11,13 @@
  * @package WPPF
  */
 
-namespace WPPF\v1_2_0\Admin\Pages;
+namespace WPPF\v1_2_0\WordPress\Admin\Pages;
 
 defined( 'ABSPATH' ) or exit;
 
 use WPPF\v1_2_0\WordPress\Admin\Pages\Page;
 
-if ( ! class_exists( '\WPPF\v1_2_0\Admin\Pages\Management_Page', false ) ) {
+if ( ! class_exists( '\WPPF\v1_2_0\WordPress\Admin\Pages\Management_Page', false ) ) {
 
 	/**
 	 * A class to abstract and automate the process of creating a page under the 'tools' menu item.

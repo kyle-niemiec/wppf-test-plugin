@@ -21,11 +21,11 @@ use WPPF\v1_2_0\WordPress\Admin\Pages\Settings_Field;
 if ( ! class_exists( '\WPPF\v1_2_0\WordPress\Admin\Pages\Settings_Section', false ) ) {
 
 	/**
-	 * A class to automate the process of creating a page under the 'settings' menu item.
+	 * A class to automate the process of creating a section for a page under the 'settings' menu item.
 	 */
 	final class Settings_Section {
 
-		/** @var \WPPF\v1_2_0\Admin\Pages Settings Page parent instance */
+		/** @var \WPPF\v1_2_0\WordPress\Admin\Pages\Options_Page The settings page parent instance */
 		protected $Settings_Page;
 
 		/** @var \WPPF\v1_2_0\WordPress\Admin\Pages\Settings_Field[] Fields registered to this Section. */
@@ -46,7 +46,7 @@ if ( ! class_exists( '\WPPF\v1_2_0\WordPress\Admin\Pages\Settings_Section', fals
 		/**
 		 * Return the Settings Page instance.
 		 * 
-		 * @return \WPPF\v1_2_0\Admin\Pages $Settings_Page The Settings Page instance.
+		 * @return \WPPF\v1_2_0\WordPress\Admin\Pages\Options_Page $Settings_Page The Settings Page instance.
 		 */
 		final public function get_settings_page() { return $this->Settings_Page; }
 
@@ -67,11 +67,11 @@ if ( ! class_exists( '\WPPF\v1_2_0\WordPress\Admin\Pages\Settings_Section', fals
 		/**
 		 * Set the initial values for the Settings Section.
 		 * 
-		 * @param \WPPF\v1_2_0\Admin\Pages $Settings_Page The parent Settings Page that these settings belong to.
+		 * @param \WPPF\v1_2_0\WordPress\Admin\Pages\Options_Page $Settings_Page The parent Settings Page that these settings belong to.
 		 * @param string $section_name The section identifier.
 		 * @param array $args The optional arguments to pass to the Section.
 		 */
-		public function __construct( Settings_Page &$Settings_Page, string $section_name, array $args ) {
+		public function __construct( Options_Page &$Settings_Page, string $section_name, array $args ) {
 
 			if ( empty( $section_name ) ) {
 				$message = sprintf( "No section identifier was specified to the %s constructor.", self::class );

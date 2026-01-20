@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "edf285df23cf908c04a0ccc6e6fa1678",
+    "content-hash": "21e73bac314d306c43a9f6d28601c225",
     "packages": [
         {
             "name": "kyle-niemiec/wp-plugin-framework",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyle-niemiec/wp-plugin-framework.git",
-                "reference": "9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41"
+                "reference": "f5adaac655a1b4db7d550622f7e98845533cc5c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41",
-                "reference": "9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41",
+                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/f5adaac655a1b4db7d550622f7e98845533cc5c2",
+                "reference": "f5adaac655a1b4db7d550622f7e98845533cc5c2",
                 "shasum": ""
             },
             "require-dev": {
@@ -47,7 +47,7 @@
             "support": {
                 "source": "https://github.com/kyle-niemiec/wp-plugin-framework/tree/v1.2.0"
             },
-            "time": "2026-01-19T06:17:44+00:00"
+            "time": "2026-01-20T03:52:38+00:00"
         }
     ],
     "packages-dev": [],

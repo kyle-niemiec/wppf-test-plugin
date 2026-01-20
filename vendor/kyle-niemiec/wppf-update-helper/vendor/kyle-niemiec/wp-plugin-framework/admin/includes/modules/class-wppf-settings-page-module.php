@@ -25,7 +25,7 @@ if ( ! class_exists( '\WPPF\v1_2_0\Admin\WPPF_Settings_Page_Module', false ) ) {
 	 */
 	final class WPPF_Settings_Page_Module extends Module {
 
-		/** @var \WPPF\v1_2_0\Admin\Pages $Settings_Page The Settings Page instance. */
+		/** @var \WPPF\v1_2_0\WordPress\Admin\Pages\Options_Page $Settings_Page The Settings Page instance. */
 		public static $Settings_Page;
 
 		/**

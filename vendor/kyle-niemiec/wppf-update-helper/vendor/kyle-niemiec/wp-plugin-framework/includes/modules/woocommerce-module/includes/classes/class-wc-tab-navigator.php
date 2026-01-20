@@ -21,7 +21,7 @@ use WPPF\v1_2_0\Framework\Utility;
 if ( ! class_exists( '\WPPF\v1_2_0\WooCommerce\WC_Tab_Navigator', false ) ) {
 
 	/**
-	 * A class to encompass the creation and script handling of wht WooCommerce Tabs UI component.
+	 * A class to encompass the creation and script handling of the WooCommerce Tabs UI component.
 	 */
 	final class WC_Tab_Navigator {
 

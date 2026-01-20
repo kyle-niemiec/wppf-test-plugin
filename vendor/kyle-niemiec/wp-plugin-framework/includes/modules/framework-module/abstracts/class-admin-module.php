@@ -65,7 +65,7 @@ if ( ! class_exists( '\WPPF\v1_2_0\Framework\Admin_Module', false ) ) {
 						require_once ( $screens_dir . $file );
 						$screen_name = Utility::pascal_underscorify( $matches[1] );
 
-						if ( class_exists( $screen_name ) && is_subclass_of( $screen_name, 'WPPF\v1_2_0\Admin\Screens' ) ) {
+						if ( class_exists( $screen_name ) && is_subclass_of( $screen_name, 'WPPF\v1_2_0\WordPress\Admin\Screens' ) ) {
 							$screen_name::construct();
 							$this->loaded_screens[] = $screen_name;
 						}

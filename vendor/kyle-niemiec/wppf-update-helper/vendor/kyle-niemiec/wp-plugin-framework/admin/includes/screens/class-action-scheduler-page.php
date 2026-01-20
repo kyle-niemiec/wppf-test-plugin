@@ -15,7 +15,7 @@ namespace WPPF\v1_2_0\Admin\Screens;
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_0\Admin\Pages\Management_Page;
+use WPPF\v1_2_0\WordPress\Admin\Pages\Management_Page;
 use WPPF\v1_2_0\WPPF_Shadow_Plugin;
 
 if ( ! class_exists( '\WPPF\v1_2_0\Admin\Screens\Action_Scheduler_Page', false ) ) {

@@ -25,7 +25,7 @@ if ( ! class_exists( '\WPPF\v1_2_0\Admin\Action_Scheduler_Page_Module', false ) 
 	 */
 	final class Action_Scheduler_Page_Module extends Module {
 
-		/** @var \WPPF\v1_2_0\Admin\Pages\Management_Settings_Page $Page The Page instance. */
+		/** @var \WPPF\v1_2_0\WordPress\Admin\Pages\Management_Page $Page The Page instance. */
 		public static $Page;
 
 		/**

@@ -13,7 +13,7 @@
         'kyle-niemiec/wp-plugin-framework' => array(
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
-            'reference' => '9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41',
+            'reference' => 'f5adaac655a1b4db7d550622f7e98845533cc5c2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../kyle-niemiec/wp-plugin-framework',
             'aliases' => array(),

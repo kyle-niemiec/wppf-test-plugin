@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '74559d9b9341a9629409aa83f01e84abadf48157',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '57532850dcc092482f8e3da52bebac55f4f6bc75',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '74559d9b9341a9629409aa83f01e84abadf48157',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '57532850dcc092482f8e3da52bebac55f4f6bc75',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -22,7 +22,7 @@
         'kyle-niemiec/wp-plugin-framework' => array(
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
-            'reference' => '9a1a4ba3fc3b5f9a7342d29f2b2307806dd6dc41',
+            'reference' => 'f5adaac655a1b4db7d550622f7e98845533cc5c2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../kyle-niemiec/wp-plugin-framework',
             'aliases' => array(),
@@ -31,7 +31,7 @@
         'kyle-niemiec/wppf-update-helper' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
-            'reference' => '91a6e4eeb68e301b95df5417f83a795e75002ca1',
+            'reference' => 'ee9860c9dc0f5d77bdf79004fa5c6434741c0346',
             'type' => 'library',
             'install_path' => __DIR__ . '/../kyle-niemiec/wppf-update-helper',
             'aliases' => array(),
