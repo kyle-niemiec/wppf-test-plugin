@@ -1,37 +1,25 @@
 <?php
 /**
- * DesignInk WP Framework Test Plugin
+ * WPPF Test Plugin
  *
- * This source file is subject to the GNU General Public License v3.0
- * that is bundled with this package in the file license.txt.
- * It is also available through the world-wide-web at this URL:
- * http://www.gnu.org/licenses/gpl-3.0.html
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to answers@designinkdigital.com so we can send you a copy immediately.
+ * Copyright (c) 2008–2026 DesignInk, LLC
+ * Copyright (c) 2026 Kyle Niemiec
  *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade the plugin to newer
- * versions in the future. If you wish to customize the plugin for your
- * needs please refer to https://designinkdigital.com
- *
- * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2026, DesignInk, LLC
- * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * This file is licensed under the GNU General Public License v3.0.
+ * See the LICENSE file for details.
  */
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_2\Meta_Schema;
-use DesignInk\WordPress\Framework\v1_1_2\Post_Meta;
+use WPPF\v1_2_0\WordPress\Meta_Schema;
+use WPPF\v1_2_0\WordPress\Post_Meta;
 
-if ( ! class_exists( 'DesignInk_Test_Post_Meta', false ) ) {
+if ( ! class_exists( 'WPPF_Test_Post_Meta', false ) ) {
 
 	/**
-	 * A class for managing the DesignInk Test Post post type Meta data.
+	 * A class for managing the WPPF Test Post post type Meta data.
 	 */
-	final class DesignInk_Test_Post_Meta extends Post_Meta {
+	final class WPPF_Test_Post_Meta extends Post_Meta {
 
 		/** @var string A string value of the Post Meta. */
 		public $current_string;
@@ -54,12 +42,12 @@ if ( ! class_exists( 'DesignInk_Test_Post_Meta', false ) ) {
 		 * 
 		 * @return string The meta key.
 		 */
-		final public static function key() { return '_designink_test_post_data'; }
+		final public static function key() { return '_wppf_test_post_data'; }
 
 		/**
 		 * Constructs the Post Series Meta.
 		 * 
-		 * @param \WP_Post $Post The parent DesignInk Test Post the Meta values belong to.
+		 * @param \WP_Post $Post The parent WPPF Test Post the Meta values belong to.
 		 */
 		public function __construct( \WP_Post $Post ) {
 

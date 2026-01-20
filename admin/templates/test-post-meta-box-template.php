@@ -1,30 +1,18 @@
 <?php
 /**
- * DesignInk WP Framework Test Plugin
+ * WPPF Test Plugin
  *
- * This source file is subject to the GNU General Public License v3.0
- * that is bundled with this package in the file license.txt.
- * It is also available through the world-wide-web at this URL:
- * http://www.gnu.org/licenses/gpl-3.0.html
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to answers@designinkdigital.com so we can send you a copy immediately.
+ * Copyright (c) 2008–2026 DesignInk, LLC
+ * Copyright (c) 2026 Kyle Niemiec
  *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade the plugin to newer
- * versions in the future. If you wish to customize the plugin for your
- * needs please refer to https://designinkdigital.com
- *
- * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2026, DesignInk, LLC
- * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * This file is licensed under the GNU General Public License v3.0.
+ * See the LICENSE file for details.
  */
 
 defined( 'ABSPATH' ) or exit;
 
 global $post;
-$Test_Meta = new DesignInk_Test_Post_Meta( $post );
+$Test_Meta = new WPPF_Test_Post_Meta( $post );
 
 ?>
 
@@ -45,7 +33,7 @@ $Test_Meta = new DesignInk_Test_Post_Meta( $post );
 		<div>
 			Clear previous saves?
 			<input
-				name="<?php echo DesignInk_Test_Post_Meta_Box::create_input_name( 'clear_saves' ); ?>"
+				name="<?php echo WPPF_Test_Post_Meta_Box::create_input_name( 'clear_saves' ); ?>"
 				type="checkbox"
 				value="yes"
 			/>
@@ -63,7 +51,7 @@ $Test_Meta = new DesignInk_Test_Post_Meta( $post );
 
 		<div>
 			<input
-				name="<?php echo DesignInk_Test_Post_Meta_Box::create_input_name( 'current_string' ); ?>"
+				name="<?php echo WPPF_Test_Post_Meta_Box::create_input_name( 'current_string' ); ?>"
 				type="text"
 				value="<?php echo $Test_Meta->current_string; ?>"
 			/>
@@ -77,7 +65,7 @@ $Test_Meta = new DesignInk_Test_Post_Meta( $post );
 
 		<div>
 			<input
-				name="<?php echo DesignInk_Test_Post_Meta_Box::create_input_name( 'is_toggle_active' ); ?>"
+				name="<?php echo WPPF_Test_Post_Meta_Box::create_input_name( 'is_toggle_active' ); ?>"
 				type="checkbox"
 				value="yes"
 				<?php echo checked( $Test_Meta->is_toggle_active, true ); ?>

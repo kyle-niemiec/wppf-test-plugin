@@ -1,43 +1,31 @@
 <?php
 /**
- * DesignInk WP Framework Test Plugin
+ * WPPF Test Plugin
  *
- * This source file is subject to the GNU General Public License v3.0
- * that is bundled with this package in the file license.txt.
- * It is also available through the world-wide-web at this URL:
- * http://www.gnu.org/licenses/gpl-3.0.html
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to answers@designinkdigital.com so we can send you a copy immediately.
+ * Copyright (c) 2008–2026 DesignInk, LLC
+ * Copyright (c) 2026 Kyle Niemiec
  *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade the plugin to newer
- * versions in the future. If you wish to customize the plugin for your
- * needs please refer to https://designinkdigital.com
- *
- * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2026, DesignInk, LLC
- * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * This file is licensed under the GNU General Public License v3.0.
+ * See the LICENSE file for details.
  */
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_2\Admin\Screens\Post_Screens;
+use WPPF\v1_2_0\WordPress\Admin\Screens\Post_Screens;
 
-if ( ! class_exists( 'DesignInk_Test_Post_Screens', false ) ) {
+if ( ! class_exists( 'WPPF_Test_Post_Screens', false ) ) {
 
 	/**
 	 * The Test Post screens in the admin.
 	 */
-	final class DesignInk_Test_Post_Screens extends Post_Screens {
+	final class WPPF_Test_Post_Screens extends Post_Screens {
 
 		/**
 		 * The post type the screens apply to.
 		 * 
 		 * @return string The post type.
 		 */
-		final public static function post_type() { return DesignInk_Test_Post_Type::post_type(); }
+		final public static function post_type() { return WPPF_Test_Post_Type::post_type(); }
 
 		/**
 		 * The primary entry function for running code globally in the admin area. This code will run with regular Module constructions.

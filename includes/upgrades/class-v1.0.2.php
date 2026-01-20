@@ -1,33 +1,20 @@
 <?php
 /**
- * DesignInk WordPress Framework
+ * WPPF Test Plugin
  *
- * This source file is subject to the GNU General Public License v3.0
- * that is bundled with this package in the file license.txt.
- * It is also available through the world-wide-web at this URL:
- * http://www.gnu.org/licenses/gpl-3.0.html
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to answers@designinkdigital.com so we can send you a copy immediately.
+ * Copyright (c) 2008–2026 DesignInk, LLC
+ * Copyright (c) 2026 Kyle Niemiec
  *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade the plugin to newer
- * versions in the future. If you wish to customize the plugin for your
- * needs please refer to https://designinkdigital.com
- *
- * @package   DesignInk/WordPress/Framework
- * @author    DesignInk Digital
- * @copyright Copyright (c) 2008-2026, DesignInk, LLC
- * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * This file is licensed under the GNU General Public License v3.0.
+ * See the LICENSE file for details.
  */
 
 namespace DFTP\Upgrades;
 
 defined( 'ABSPATH' ) or exit;
 
-use DesignInk\WordPress\Framework\v1_1_2\Utility;
-use DesignInk\WordPress\Framework\v1_1_2\Plugin\Upgrader_Schema;
+use WPPF\v1_2_0\Framework\Utility;
+use WPPF\v1_2_0\Plugin\Upgrader_Schema;
 
 if ( ! class_exists( 'v1_0_2', false ) ) {
 
