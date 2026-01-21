@@ -76,11 +76,18 @@ if ( ! class_exists( 'WPPF\Update_Helper\v1_0_1\Plugin_Installer_Module', false 
 					if ( isset( $options->token ) && $options->package === $package_url ) {
 						$ssl = Settings_Module::get_ssl_key();
 						$token = base64_decode( $options->token );
-						$decode = openssl_decrypt( $token, 'aes-256-cbc', $ssl['key'], OPENSSL_RAW_DATA );
-						$url = add_query_arg( 'access_token', $decode, $package_url );
-						$temp_file = sprintf( '%stmp-plugin-%s222.zip', get_temp_dir(), $options->slug );
+						$decode = openssl_decrypt( $token, 'aes-256-cbc', $ssl, OPENSSL_RAW_DATA );
+						$temp_file = sprintf( '%stmp-plugin-%s.zip', get_temp_dir(), $options->slug );
 
-						$request = wp_remote_request( $url );
+						$request = wp_remote_request(
+							$package_url,
+							array(
+								'headers' => array(
+									'Authorization' => sprintf( 'Bearer %s', $decode )
+								)
+							)
+						);
+
 						$file = wp_remote_retrieve_body( $request );
 						file_put_contents( $temp_file, $file );
 

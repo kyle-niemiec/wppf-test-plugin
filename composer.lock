@@ -55,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyle-niemiec/wppf-update-helper.git",
-                "reference": "5f98fa8b8744bb22d5b8c97654f927946f95d83d"
+                "reference": "0e65ad1b805d6cec7e2fd75f91d15c6095aafe34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyle-niemiec/wppf-update-helper/zipball/5f98fa8b8744bb22d5b8c97654f927946f95d83d",
-                "reference": "5f98fa8b8744bb22d5b8c97654f927946f95d83d",
+                "url": "https://api.github.com/repos/kyle-niemiec/wppf-update-helper/zipball/0e65ad1b805d6cec7e2fd75f91d15c6095aafe34",
+                "reference": "0e65ad1b805d6cec7e2fd75f91d15c6095aafe34",
                 "shasum": ""
             },
             "require": {
@@ -81,7 +81,7 @@
             "support": {
                 "source": "https://github.com/kyle-niemiec/wppf-update-helper/tree/v1.0.1"
             },
-            "time": "2026-01-21T03:02:12+00:00"
+            "time": "2026-01-21T22:09:18+00:00"
         }
     ],
     "packages-dev": [],

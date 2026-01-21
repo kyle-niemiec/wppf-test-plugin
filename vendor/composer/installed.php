@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'd7a367143e46cb6e890457d106da2c40c5b6b98e',
+        'reference' => 'c1a93fa4869736628b77847b8ed8f77c7f8e8eff',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'd7a367143e46cb6e890457d106da2c40c5b6b98e',
+            'reference' => 'c1a93fa4869736628b77847b8ed8f77c7f8e8eff',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -31,7 +31,7 @@
         'kyle-niemiec/wppf-update-helper' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
-            'reference' => '5f98fa8b8744bb22d5b8c97654f927946f95d83d',
+            'reference' => '0e65ad1b805d6cec7e2fd75f91d15c6095aafe34',
             'type' => 'library',
             'install_path' => __DIR__ . '/../kyle-niemiec/wppf-update-helper',
             'aliases' => array(),

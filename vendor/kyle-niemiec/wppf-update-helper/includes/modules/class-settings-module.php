@@ -15,7 +15,7 @@ namespace WPPF\Update_Helper\v1_0_1;
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_0\Admin\WPPF_Settings_Page_Module;
+use WPPF\v1_2_0\Admin\Screens\WPPF_Settings_Page;
 use WPPF\v1_2_0\Framework\Module;
 use WPPF\v1_2_0\WordPress\Admin\Pages\Settings_Section;
 
@@ -49,14 +49,20 @@ if ( ! class_exists( 'WPPF\Update_Helper\v1_0_1\Settings_Module', false ) ) {
 		 * @return false|string Return the saved SSL key or FALSE if it does not exist.
 		 */
 		final public static function get_ssl_key() {
-			return get_option( '_' . self::SSL_SECTION_NAME, false );
+			$option = sprintf(
+				'_%s_%s',
+				WPPF_Settings_Page::page_option_group(),
+				self::SSL_SECTION_NAME
+			);
+
+			return get_option( $option, false );
 		}
 
 		/**
 		 * Add the SSL key settings to the WPPF Settings Page.
 		 */
 		private static function add_ssl_settings() {
-			$Settings_Page = WPPF_Settings_Page_Module::$Settings_Page;
+			$Settings_Page = WPPF_Settings_Page::instance();
 			$section_description = 'The SSL key and initialization vector for self-hosted plugin updates if using encryption for a private key.';
 
 			$Settings_Page->add_section( new Settings_Section(
