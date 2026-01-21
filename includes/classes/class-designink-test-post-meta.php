@@ -38,7 +38,7 @@ if ( ! class_exists( 'WPPF_Test_Post_Meta', false ) ) {
 		);
 
 		/**
-		 * The required abstraction function meta_key()
+		 * The required abstraction function key()
 		 * 
 		 * @return string The meta key.
 		 */

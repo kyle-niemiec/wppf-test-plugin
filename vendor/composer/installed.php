@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '57532850dcc092482f8e3da52bebac55f4f6bc75',
+        'reference' => 'd7a367143e46cb6e890457d106da2c40c5b6b98e',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '57532850dcc092482f8e3da52bebac55f4f6bc75',
+            'reference' => 'd7a367143e46cb6e890457d106da2c40c5b6b98e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -22,7 +22,7 @@
         'kyle-niemiec/wp-plugin-framework' => array(
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
-            'reference' => 'f5adaac655a1b4db7d550622f7e98845533cc5c2',
+            'reference' => '51298905547c0956028e832851ff70d2f64a2375',
             'type' => 'library',
             'install_path' => __DIR__ . '/../kyle-niemiec/wp-plugin-framework',
             'aliases' => array(),
@@ -31,7 +31,7 @@
         'kyle-niemiec/wppf-update-helper' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
-            'reference' => 'ee9860c9dc0f5d77bdf79004fa5c6434741c0346',
+            'reference' => '5f98fa8b8744bb22d5b8c97654f927946f95d83d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../kyle-niemiec/wppf-update-helper',
             'aliases' => array(),

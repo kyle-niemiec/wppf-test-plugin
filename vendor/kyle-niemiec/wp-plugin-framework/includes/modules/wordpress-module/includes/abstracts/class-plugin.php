@@ -151,11 +151,13 @@ if ( ! class_exists( '\WPPF\v1_2_0\WordPress\Plugin', false ) ) {
 		 */
 		private function maybe_init_admin() {
 			$reflection = $this->get_class_reflection();
-			$file_path = sprintf( '%sadmin/%s-admin.php', plugin_dir_path( $reflection->getFileName() ), Utility::slugify( $reflection->getShortName() ) );
+			$folder_name = sprintf( '%sadmin', plugin_dir_path( $reflection->getFileName() ) );
+			$file_path = sprintf( '%s/%s-admin.php', $folder_name, Utility::slugify( $reflection->getShortName() ) );
 
 			if ( is_file( $file_path ) ) {
 				require_once ( $file_path );
-				$admin_module_name = sprintf( '%s_Admin', $reflection->getName() );
+				$namespace = Utility::get_file_namespace( $file_path );
+				$admin_module_name = sprintf( '%s\%s_Admin', $namespace, $reflection->getShortName() );
 
 				if ( class_exists( $admin_module_name, false ) && is_subclass_of( $admin_module_name, Admin_Module::class ) ) {
 					$Admin_Module = $admin_module_name::submodule_instance();
@@ -170,7 +172,11 @@ if ( ! class_exists( '\WPPF\v1_2_0\WordPress\Plugin', false ) ) {
 					Utility::doing_it_wrong( __METHOD__, __( $message ) );
 				}
 
+			} else if ( file_exists( $folder_name ) ) {
+				$message = sprintf( "Found admin module folder for %s, but could not locate the expected file, %s.", static::class, $file_path );
+				Utility::doing_it_wrong( __METHOD__, __( $message ) );
 			}
+
 		}
 
 		/**
