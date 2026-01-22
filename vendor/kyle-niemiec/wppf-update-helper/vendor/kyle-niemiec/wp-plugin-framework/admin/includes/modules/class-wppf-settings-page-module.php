@@ -40,7 +40,7 @@ if ( ! class_exists( '\WPPF\v1_2_0\Admin\WPPF_Settings_Page_Module', false ) ) {
 		 * WordPress 'admin_menu' hook.
 		 */
 		final public static function _admin_menu() {
-			self::$Settings_Page = new WPPF_Settings_Page();
+			self::$Settings_Page = WPPF_Settings_Page::instance();
 		}
 
 		/**
