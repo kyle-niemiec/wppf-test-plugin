@@ -2,5 +2,13 @@
     "require": {
         "kyle-niemiec/wppf-update-helper": "^1.0",
         "kyle-niemiec/wp-plugin-framework": "^1.2"
+    },
+    "scripts": {
+        "app:build": [
+            "rm -rf ./build",
+            "mkdir -p ./build",
+            "composer install",
+            "zip -r ./build/wppf-test-plugin.zip ./ -x \"wppf-test-plugin.zip\""
+        ]
     }
 }

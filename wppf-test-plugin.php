@@ -38,6 +38,7 @@ if ( ! class_exists( 'WPPF_Test_Plugin', false ) ) {
 		 */
 		final public static function construct() {
 			Staging_Detection_Notice::add_notice( __FILE__, "This message will show up if staging conditions are detected." );
+			Plugin_Update_List::add_plugin( 'wppf-test-plugin', 'https://codeflower.io/' );
 		}
 
 		/**
@@ -53,7 +54,6 @@ if ( ! class_exists( 'WPPF_Test_Plugin', false ) ) {
 	}
 
 	// Fire it up
-	Plugin_Update_List::add_plugin( 'wppf-test-plugin', 'https://codeflower.io/' );
 	WPPF_Test_Plugin::instance();
 
 }

@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "kyle-niemiec/wp-plugin-framework",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyle-niemiec/wp-plugin-framework.git",
-                "reference": "c1da3a141ec0a94dc305733d788c4a7a52e45f9c"
+                "reference": "adbf046d9df2cc83d41070ecb6ac4794c7831684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/c1da3a141ec0a94dc305733d788c4a7a52e45f9c",
-                "reference": "c1da3a141ec0a94dc305733d788c4a7a52e45f9c",
+                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/adbf046d9df2cc83d41070ecb6ac4794c7831684",
+                "reference": "adbf046d9df2cc83d41070ecb6ac4794c7831684",
                 "shasum": ""
             },
             "require-dev": {
@@ -45,22 +45,22 @@
             ],
             "description": "My framework for facilitating WordPress plugin development.",
             "support": {
-                "source": "https://github.com/kyle-niemiec/wp-plugin-framework/tree/v1.2.0"
+                "source": "https://github.com/kyle-niemiec/wp-plugin-framework/tree/v1.2.1"
             },
-            "time": "2026-01-21T22:52:33+00:00"
+            "time": "2026-01-24T11:14:34+00:00"
         },
         {
             "name": "kyle-niemiec/wppf-update-helper",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyle-niemiec/wppf-update-helper.git",
-                "reference": "3d5da553e2994d167f9f3a7b74383a4a2c0f5f8b"
+                "reference": "d727041352cf1ebcabf36b9c84fd25ebb576be8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyle-niemiec/wppf-update-helper/zipball/3d5da553e2994d167f9f3a7b74383a4a2c0f5f8b",
-                "reference": "3d5da553e2994d167f9f3a7b74383a4a2c0f5f8b",
+                "url": "https://api.github.com/repos/kyle-niemiec/wppf-update-helper/zipball/d727041352cf1ebcabf36b9c84fd25ebb576be8e",
+                "reference": "d727041352cf1ebcabf36b9c84fd25ebb576be8e",
                 "shasum": ""
             },
             "require": {
@@ -79,9 +79,9 @@
             ],
             "description": "A small, importable framework for integrating a WPPF plugin with the WordPress Plugin Update Server.",
             "support": {
-                "source": "https://github.com/kyle-niemiec/wppf-update-helper/tree/v1.0.1"
+                "source": "https://github.com/kyle-niemiec/wppf-update-helper/tree/v1.0.2"
             },
-            "time": "2026-01-22T00:19:35+00:00"
+            "time": "2026-01-24T11:23:25+00:00"
         }
     ],
     "packages-dev": [],
