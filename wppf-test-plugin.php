@@ -3,7 +3,7 @@
  * Plugin Name: WPPF Test Plugin
  * Plugin URI: https://github.com/kyle-niemiec/wppf-test-plugin
  * Description: A demo plugin for the WordPress Plugin Framework.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Kyle Niemiec
  * Author URI: https://codeflower.io/
  * Text Domain: wporg
@@ -18,7 +18,7 @@
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\Update_Helper\v1_0_1\Plugin_Update_List;
+use WPPF\Update_Helper\v1_0_2\Plugin_Update_List;
 use WPPF\v1_2_0\Plugin\Staging_Detection\Staging_Detection_Notice;
 use WPPF\v1_2_0\WooCommerce\WooCommerce_Plugin;
 
