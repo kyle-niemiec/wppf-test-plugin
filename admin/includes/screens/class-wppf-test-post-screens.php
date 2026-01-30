@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_0\WordPress\Admin\Screens\Post_Screens;
+use WPPF\v1_2_1\WordPress\Admin\Screens\Post_Screens;
 
 if ( ! class_exists( 'WPPF_Test_Post_Screens', false ) ) {
 

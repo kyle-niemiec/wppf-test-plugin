@@ -13,8 +13,8 @@ namespace DFTP\Upgrades;
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_0\Framework\Utility;
-use WPPF\v1_2_0\Plugin\Upgrader_Schema;
+use WPPF\v1_2_1\Framework\Utility;
+use WPPF\v1_2_1\Plugin\Upgrader_Schema;
 
 if ( ! class_exists( 'v1_0_3', false ) ) {
 

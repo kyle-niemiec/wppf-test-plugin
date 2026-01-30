@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_0\Framework\Module;
+use WPPF\v1_2_1\Framework\Module;
 
 if ( ! class_exists( 'WPPF_Test_Module', false ) ) {
 
