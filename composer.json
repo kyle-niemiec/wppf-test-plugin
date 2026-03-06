@@ -4,11 +4,13 @@
         "kyle-niemiec/wp-plugin-framework": "^1.2"
     },
     "scripts": {
-        "app:build": [
+        "build": [
             "rm -rf ./build",
-            "mkdir -p ./build",
+            "mkdir -p ./build/src",
             "composer install",
-            "zip -r ./build/wppf-test-plugin.zip ./ -x \"wppf-test-plugin.zip\""
+            "rsync -r --exclude-from=.distignore ./ ./build/src",
+            "zip -r ./build/wppf-test-plugin.zip ./build/src",
+            "(cd ./build/src ; zip -r ../wppf-test-plugin.zip ./)"
         ]
     }
 }

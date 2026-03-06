@@ -1,0 +1,11 @@
+# The build folder
+build/
+
+# Git artifacts
+.git/
+.gitignore
+.distignore
+
+# Composer configs
+composer.json
+composer.lock
