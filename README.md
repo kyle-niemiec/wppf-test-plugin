@@ -35,7 +35,7 @@ https://github.com/kyle-niemiec/wp-plugin-framework
 - WordPress
 - WooCommerce
 
-This plugin extends `WPPF\v1_2_1\WooCommerce\WooCommerce_Plugin`, so WooCommerce must be installed in order to enable it.
+This plugin extends `WPPF\v1_2_3\WooCommerce\WooCommerce_Plugin`, so WooCommerce must be installed in order to enable it.
 
 ## Installation
 

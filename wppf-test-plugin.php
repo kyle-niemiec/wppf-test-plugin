@@ -19,8 +19,8 @@
 defined( 'ABSPATH' ) or exit;
 
 use WPPF\Update_Helper\v1_0_2\Plugin_Update_List;
-use WPPF\v1_2_1\Plugin\Staging_Detection\Staging_Detection_Notice;
-use WPPF\v1_2_1\WooCommerce\WooCommerce_Plugin;
+use WPPF\v1_2_3\Plugin\Staging_Detection\Staging_Detection_Notice;
+use WPPF\v1_2_3\WooCommerce\WooCommerce_Plugin;
 
 // Require the WordPress Plugin Framework
 require_once __DIR__ . '/vendor/kyle-niemiec/wp-plugin-framework/index.php';

@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_1\WordPress\Post;
+use WPPF\v1_2_3\WordPress\Post;
 
 if ( ! class_exists( 'WPPF_Test_Post', false ) ) {
 

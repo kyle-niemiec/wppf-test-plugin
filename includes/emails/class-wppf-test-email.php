@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_1\WooCommerce\Email;
+use WPPF\v1_2_3\WooCommerce\Email;
 
 if ( ! class_exists( 'WPPF_Test_Email', false ) ) {
 

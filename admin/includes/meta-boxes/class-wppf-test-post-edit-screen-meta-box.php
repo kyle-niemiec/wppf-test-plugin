@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) or exit;
 
-use WPPF\v1_2_1\WordPress\Admin\Meta_Box;
+use WPPF\v1_2_3\WordPress\Admin\Meta_Box;
 
 if ( ! class_exists( 'WPPF_Test_Post_Edit_Screen_Meta_Box', false ) ) {
 

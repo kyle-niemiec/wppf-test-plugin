@@ -8,29 +8,32 @@
     "packages": [
         {
             "name": "kyle-niemiec/wp-plugin-framework",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kyle-niemiec/wp-plugin-framework.git",
-                "reference": "9493f96cadaaac4bfac35750b2717ca0a204c3b9"
+                "reference": "61c700ef43a36688108be380a6ee556c0b420c8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/9493f96cadaaac4bfac35750b2717ca0a204c3b9",
-                "reference": "9493f96cadaaac4bfac35750b2717ca0a204c3b9",
+                "url": "https://api.github.com/repos/kyle-niemiec/wp-plugin-framework/zipball/61c700ef43a36688108be380a6ee556c0b420c8a",
+                "reference": "61c700ef43a36688108be380a6ee556c0b420c8a",
                 "shasum": ""
             },
             "require-dev": {
                 "code-lts/doctum": "^5.5",
+                "phpunit/phpunit": "^10.5",
                 "symfony/console": "^6.4"
             },
             "bin": [
-                "bin/wppf"
+                "bin/wppf",
+                "bin/xphp"
             ],
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "WPPF\\": ""
+                    "WPPF\\": "",
+                    "WPPF\\Tests\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -45,9 +48,9 @@
             ],
             "description": "My framework for facilitating WordPress plugin development.",
             "support": {
-                "source": "https://github.com/kyle-niemiec/wp-plugin-framework/tree/v1.2.1"
+                "source": "https://github.com/kyle-niemiec/wp-plugin-framework/tree/v1.2.3"
             },
-            "time": "2026-01-25T12:01:41+00:00"
+            "time": "2026-03-09T11:38:11+00:00"
         },
         {
             "name": "kyle-niemiec/wppf-update-helper",
