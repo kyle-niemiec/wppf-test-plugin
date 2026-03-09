@@ -33,7 +33,7 @@ if ( ! class_exists( 'WPPF_Test_Post', false ) ) {
 		 * @return \WPPF_Test_Post_Meta The Test Post Meta.
 		 */
 		final public function get_test_meta() {
-			return $this->get_meta( WPPF_Test_Post_Meta::meta_key() );
+			return $this->get_meta( WPPF_Test_Post_Meta::key() );
 		}
 
 		/**
@@ -43,7 +43,7 @@ if ( ! class_exists( 'WPPF_Test_Post', false ) ) {
 		 */
 		public function __construct( $id ) {
 			parent::__construct( $id );
-			$this->add_meta( new WPPF_Test_Post_Meta( $this ) );
+			$this->add_meta( new WPPF_Test_Post_Meta( $this->get_post() ) );
 		}
 
 	}

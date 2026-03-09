@@ -46,7 +46,7 @@ if ( ! class_exists( 'WPPF_Test_Post_Screens', false ) ) {
 		 * @param \WP_Screen The current screen.
 		 */
 		final public static function view_post( \WP_Screen $current_screen ) {
-			DesignInk_Test_Post_Edit_Screen_Meta_Box::instance()->add_meta_box();
+			WPPF_Test_Post_Edit_Screen_Meta_Box::instance()->add_meta_box();
 		}
 
 		/**
