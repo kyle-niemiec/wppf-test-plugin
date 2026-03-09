@@ -1,4 +1,15 @@
 {
+    "description": "Reference implementation and demonstration plugin for the WordPress Plugin Framework (WPPF), showcasing modules, custom post types, structured meta, WooCommerce integration, and upgrade routines.",
+    "keywords": [
+        "wordpress",
+        "wordpress-plugin",
+        "plugin-example",
+        "reference-implementation",
+        "wppf",
+        "plugin-framework",
+        "woocommerce",
+        "wordpress-development"
+    ],
     "require": {
         "kyle-niemiec/wppf-update-helper": "^1.0",
         "kyle-niemiec/wp-plugin-framework": "^1.2"
