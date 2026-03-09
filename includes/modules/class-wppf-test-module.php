@@ -32,7 +32,7 @@ if ( ! class_exists( 'WPPF_Test_Module', false ) ) {
 		 */
 		final public static function _init() {
 			if ( isset( $_GET['wppf-test-email'] ) ) {
-				WPPF_Test_Email::send_email();
+				WPPF_Test_Email::send_email( [] );
 			}
 		}
 
