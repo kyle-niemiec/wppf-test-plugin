@@ -3,7 +3,7 @@
  * Plugin Name: WPPF Test Plugin
  * Plugin URI: https://github.com/kyle-niemiec/wppf-test-plugin
  * Description: A demo plugin for the WordPress Plugin Framework.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Kyle Niemiec
  * Author URI: https://codeflower.io/
  * Text Domain: wporg
